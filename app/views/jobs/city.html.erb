@@ -1,0 +1,18 @@
+<h2 class="text-center"> 位于<%= @cuery_string %>的相关岗位 </h2>
+    <% @jobs.each do |job| %>
+    <div class="col-md-4 col-xs-12">
+    <div class="columns">
+      <ul class="text-center panel panel-info panel-pricing list-group">
+        <li class="panel-heading"><i class="fa fa-desktop"></i><h3><%= link_to(render_highlight_content(job, @query_string), job_path(job)) %></h3></li>
+        <li class="panel-body"><%= job.description %></li>
+        <li class="highlight">薪酬范围：￥<%= job.wage_lower_bound %>-<%= job.wage_upper_bound %></li>
+        <li class="highlight">创建时间：<%= job.created_at.to_date %></li>
+        <li class="panel-footer grey btn btn-default btn-info"><%= link_to("查看详情", job_path(job)) %></li>
+      </ul>
+    </div>
+    </div>
+    <% end %>
+<div class="text-center col-md-12 pagination">
+  <%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
+</div>
+<div class="row"></div>

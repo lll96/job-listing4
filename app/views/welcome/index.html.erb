@@ -1,41 +1,150 @@
-<div class="jumbotron">
-     <h1 class="title">18K Offer</h1>
-     <p class="slogan">18K Offer 是一个提供18K薪水工作机会的求职网站。
-     <br>
-     我们希望藉由这个网站，能让大家找到且应征上高薪且优质的工作。
-     <br>
-      凭借自己的努力和天份也会变 Winner
-     </p>
-     <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">马上应征</a></p>
-   </div>
-
-   <section id="company">
-     <div class = "container-fluid">
-       <div class="row">
-         <div class="col-sm-4 ">
-           <div class="thumbnail">
-             <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
-             <div class="caption">
-               <h3>北京朝阳建外SOHO</h3>
-             </div>
-           </div>
-         </div>
-         <div class="col-sm-4 ">
-           <div class="thumbnail">
-             <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
-             <div class="caption">
-               <h3>info@18koffer.com</h3>
-             </div>
-           </div>
-         </div>
-         <div class="col-sm-4 ">
-           <div class="thumbnail">
-             <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
-             <div class="caption">
-               <h3>010-12344321</h3>
-             </div>
-           </div>
+<div class="col-md-12">
+       <div class="row box">
+         <div class="box-inner col-md-6 col-md-offset-3">
+           <h1 class="title"> Welcome to SoAR  </h1>
+           <p class="slogan">我们做的是删去99.9%的钓鱼招聘信息
+             <br>
+      而不是搭一个假的花果山.        </br>
+           </p>
+           <p class="lead">
+             <%= link_to '马上应征', jobs_path, class: 'btn btn-danger' %>
+           </p>
          </div>
        </div>
      </div>
-   </section>
+
+     <div class="content-section-a">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-sm-6">
+              <hr class="section-heading-spacer">
+              <div class="clearfix"></div>
+              <h2 class="section-heading">500家大型企业同时在线招聘</h2>
+              <p class="lead"> “最快5分钟，找到让你怦然心动的公司” </p>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+              <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-section-b">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+              <hr class="section-heading-spacer">
+              <div class="clearfix"></div>
+              <h2 class="section-heading"> 19k高薪岗位正在被热搜</h2>
+              <p class="lead"> “大城市的快节奏，小城市的慢生活，你热爱的城市有没有上榜呢” <a target="_blank" href="http://localhost:3000/jobs/2/resumes/new"></p>
+            </div>
+            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+              <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-section-a">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-sm-6">
+              <hr class="section-heading-spacer">
+              <div class="clearfix"></div>
+              <h2 class="section-heading">光传播的速度为299,792,458m/s</h2>
+              <p class="lead">“投递简历最快也只需1秒”</p>点此编辑简历</p><p><a target="_blank" href="https://forum.qzy.camp/"></a></p>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+              <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+              <div class="row">
+                   <div class="col-sm-6 col-md-3">
+                      <div class="panel panel-default panel-card">
+                          <div class="panel-heading">
+                              <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec" />
+                          </div>
+                          <div class="panel-figure">
+                              <img class="img-responsive img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/73.jpg" />
+                          </div>
+                          <div class="panel-body">
+                              <h4 class="panel-header">ANNA</h4>
+                              <small>XX公司市场部经理</small>
+                          </div>
+                          <div class="panel-thumbnails">
+                            <div class="row">
+                              <p>以前在招聘网站上被假招聘信息所骗，心里有阴影，SoAR在这方面做的让我特别放心</p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                      <div class="panel panel-default panel-card">
+                          <div class="panel-heading">
+                              <img src="https://unsplash.imgix.net/41/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg?q=75&fm=jpg&s=a760fd82863937c841f4b3870cdef011" />
+                          </div>
+                          <div class="panel-figure">
+                              <img class="img-responsive img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/josue/73.jpg" />
+                          </div>
+                          <div class="panel-body">
+                              <h4 class="panel-header">SUNNY</h4>
+                              <small>XX公司工程师</small>
+                          </div>
+                          <div class="panel-thumbnails">
+                              <div class="row">
+                                  <p>我在SoAR找到我现在的公司，发展前景和待遇我都很满意，招聘网站我推荐SoAR。</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                      <div class="panel panel-default panel-card">
+                          <div class="panel-heading">
+                              <img src="https://ununsplash.imgix.net/19/waves.JPG?q=75&fm=jpg&s=6f316bc8e1dc9887a7cebe0841096e99" />
+                          </div>
+                          <div class="panel-figure">
+                              <img class="img-responsive img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mutlu82/73.jpg" />
+                          </div>
+                          <div class="panel-body">
+                              <h4 class="panel-header">kimLIU</h4>
+                              <small>XX公司销售代表</small>
+                          </div>
+                          <div class="panel-thumbnails">
+                              <div class="row">
+                                <p>这里有热心的师兄师姐提建议，让我找到了最适合自己的职业发展道路。</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                      <div class="panel panel-default panel-card">
+                          <div class="panel-heading">
+                              <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&fm=jpg&s=b919d3158053cde8e9f0e37b4876c14f" />
+                          </div>
+                          <div class="panel-figure">
+                              <img class="img-responsive img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/nisaanjani/73.jpg" />
+                          </div>
+                          <div class="panel-body">
+                              <h4 class="panel-header">Addle</h4>
+                              <small>XX公司总监</small>
+                          </div>
+                          <div class="panel-thumbnails">
+                              <div class="row">
+                                  <p>SoAR的评论区反馈区总是特别活跃，我时常在这里看前面伙伴的面试经验，哈哈。</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div><div class="u-mt8 u-mb1 u-tac">
+
+   <img id="GeneralContent_C156_ctl00_ctl00_imageItem" title="Our Customers" src="//d585tldpucybw.cloudfront.net/sfimages/default-source/labs/devcraft/logos.png?sfvrsn=9" alt="Logos" />
+
+
+
+
+              </div>
+          </div>

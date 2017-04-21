@@ -10,8 +10,18 @@ Rails.application.routes.draw do
     end
   end
   resources :jobs do
-     resources :resumes
+    resources :resumes
+    collection do
+      get :search
+      get :city 
     end
+    resources :resumes
+  end
+
+  namespace :account do
+  resources :users
+end
+
 
     root 'welcome#index'
 end
