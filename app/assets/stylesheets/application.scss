@@ -22,16 +22,16 @@
 //---------Navbar---------
 
   .navbar-default {
-      background: -webkit-linear-gradient(left, #000428,#004e92);
-      border-color: #283593;
+     background: -webkit-linear-gradient(left, #000428,#004e92);
+      border-color:  #212121;
       margin-bottom: 0;
       border-radius: 0;
   }
 
   .navbar-default .navbar-brand {
       color: #EF6C00;
-      padding: 10px 15px;
-      line-height: 30px;
+      padding: 10px 20px;
+      line-height: 20px;
   }
 
   .navbar-default .navbar-brand:hover,
@@ -64,236 +64,190 @@
       color: #212121;
   }
 
+
   //---------Box---------
 
-   .box {
-       background-image: url("header.jpg");
-       background-repeat: no-repeat;
-       background-size: cover;
-       margin-bottom: 50px;
+  .box {
+      background-image: url("http://ww4.sinaimg.cn/large/006tKfTcgy1fexj6yc87oj31kw11ynpl.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 50px;
+      margin-left: -29px;
+      margin-right: -30px;
 
-       .box-inner {
-           background-color: rgba(250, 250, 250, 0.69);
-           padding-bottom: 5px;
-           margin-top: 150px;
-           margin-bottom: 150px;
-       }
-
-       .title {
-           text-align: center;
-           margin-bottom: 80px;
-       }
-
-       .slogan {
-           color: #222;
-           margin-top: 10px;
-           margin-bottom: 50px;
-           text-align: center;
-           font-size: 25px;
-           top: 12px;
-       }
-
-       .lead {
-           margin-bottom: 60px;
-           text-align: center;
-           color: white;
-       }
-   }
-
-   //---------Content---------
-
-      .content-section-a {
-          padding: 50px 0;
-          background-color: #f8f8f8;
+      .box-inner {
+          background-color: rgba(250, 250, 250, 0.3);
+          padding-bottom: 5px;
+          margin-top: 150px;
+          margin-bottom: 150px;
       }
 
-      .content-section-b {
-          padding: 50px 0;
-          border-top: 1px solid #e7e7e7;
-          border-bottom: 1px solid #e7e7e7;
+      .title {
+          text-align: center;
+          margin-bottom: 80px;
       }
 
-      .section-heading-spacer {
-          float: left;
-          width: 200px;
-          border-top: 3px solid #e7e7e7;
-      }
-
-      .section-heading {
-          margin-bottom: 30px;
+      .slogan {
+          color: #222;
+          margin-top: 10px;
+          margin-bottom: 50px;
+          text-align: center;
+          font-size: 25px;
+          top: 12px;
       }
 
       .lead {
-          font-size: 18px;
-          font-weight: 400;
+          margin-bottom: 60px;
+          text-align: center;
+          color: white;
       }
+  }
 
-         //---------Footer---------
 
-    footer {
-        color: white;
+
+    //---------Content---------
+
+    .content-section-a {
+        padding: 50px 0;
+        background-color: #f8f8f8;
+        margin-left: -29px;
+        margin-right: -30px;
+
     }
 
-    footer .footer-below {
-        padding: 25px 0;
-        background: -webkit-linear-gradient(left, #000428,#004e92);
+    .content-section-b {
+        padding: 50px 0;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
     }
 
-    @media (min-width: 768px) {
-    .navbar {
-        border-radius: 0;//圆角为0
+    .section-heading-spacer {
+        float: left;
+        width: 200px;
+        border-top: 3px solid #e7e7e7;
     }
-}
 
-.container-fluid .jumbotron{
-  padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
-  margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-  border-radius: 0;//圆角为0
-}
+    .section-heading {
+        margin-bottom: 30px;
+    }
 
-#search-id {
-width: 250px;
-padding-top: 8px;
-}
+    .lead {
+        font-size: 18px;
+        font-weight: 400;
+    }
 
-.btn-danger {
-    color: #fff;//字体颜色
-    background-color: #363795;//背景颜色
-    border-color: #363795;//边框颜色
-}
+     //---------Footer---------
 
-.btn-danger:hover {
-    background-color: #F29492;//鼠标放置在btn上的背景颜色
-    border-color: #F29492;//鼠标放置在btn上的边框颜色
-}
-
-.btn-lg, .btn-group-lg > .btn {
-    padding: 15px 30px;//通过padding来决定btn的大小
-    font-size: 30px;//btn文字大小
-    letter-spacing: 3px;//调整文字间距
-    border-radius: 3px;//btn圆角
-    width: 200px;//这里用指定宽度把btn拉得更长
-}
-
-.navbar-brand > img {
-    display: inline-block;	//图片和链接文字显示在同一行
-    margin-right: 10px; //图片和链接文字拉开一点距离
-    width: 32px; //定制图片宽度
-    height: 32px; //定制图片高度
-}
-
-body{
-  width: 100%;
-  background: -webkit-linear-gradient(left, #B2DFDB, #80DEEA, #90CAF9, #B39DDB);//从左到右的渐变颜色，可以添加多项，我这里只添加了四个不同的颜色进行渐变，你喜欢的话可以弄彩虹的七种颜色去渐变。
-  background: linear-gradient(to right, #B2DFDB, #80DEEA, #90CAF9, #B39DDB);//从右到左的渐变颜色，我选择与上面一样
-  background-size: 600% 100%;
-  -webkit-animation: HeroBG 20s ease infinite;
-          animation: HeroBG 20s ease infinite;
-}
-
-@-webkit-keyframes HeroBG {
-  0% {
-    background-position: 0 0;
+  footer {
+      color: white;
   }
-  50% {
-    background-position: 100% 0;
+
+  footer .footer-below {
+      padding: 20px 0;
+      background: -webkit-linear-gradient(left, #000428,#004e92);
+      margin-left: -100px;
   }
-  100% {
-    background-position: 0 0;
+
+//---------用户评论----------
+
+  .panel.panel-card {
+      position: relative;
+      height: 241px;
+      border: none;
+      overflow: hidden;
   }
-}
+  .panel.panel-card .panel-heading {
+      position: relative;
+      z-index: 2;
+      height: 120px;
+      border-bottom-color: #fff;
+      overflow: hidden;
 
-@keyframes HeroBG {
-  0% {
-    background-position: 0 0;
+      -webkit-transition: height 600ms ease-in-out;
+              transition: height 600ms ease-in-out;
   }
-  50% {
-    background-position: 100% 0;
+  .panel.panel-card .panel-heading img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      width: 120%;
+
+      -webkit-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
   }
-  100% {
-    background-position: 0 0;
+
+  .panel.panel-card .panel-figure {
+      position: absolute;
+      top: auto;
+      left: 50%;
+      z-index: 3;
+      width: 70px;
+      height: 70px;
+      background-color: #fff;
+      border-radius: 50%;
+      opacity: 1;
+      -webkit-box-shadow: 0 0 0 3px #fff;
+              box-shadow: 0 0 0 3px #fff;
+
+      -webkit-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+
+      -webkit-transition: opacity 400ms ease-in-out;
+              transition: opacity 400ms ease-in-out;
   }
-}
 
-.panel.panel-card {
-    position: relative;
-    height: 241px;
-    border: none;
-    overflow: hidden;
-}
-.panel.panel-card .panel-heading {
-    position: relative;
-    z-index: 2;
-    height: 120px;
-    border-bottom-color: #fff;
-    overflow: hidden;
+  .panel.panel-card .panel-body {
+      padding-top: 40px;
+      padding-bottom: 20px;
 
-    -webkit-transition: height 600ms ease-in-out;
-            transition: height 600ms ease-in-out;
-}
-.panel.panel-card .panel-heading img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    width: 120%;
+      -webkit-transition: padding 400ms ease-in-out;
+              transition: padding 400ms ease-in-out;
+  }
 
-    -webkit-transform: translate3d(-50%,-50%,0);
-            transform: translate3d(-50%,-50%,0);
-}
-
-.panel.panel-card .panel-figure {
-    position: absolute;
-    top: auto;
-    left: 50%;
-    z-index: 3;
-    width: 70px;
-    height: 70px;
-    background-color: #fff;
-    border-radius: 50%;
-    opacity: 1;
-    -webkit-box-shadow: 0 0 0 3px #fff;
-            box-shadow: 0 0 0 3px #fff;
-
-    -webkit-transform: translate3d(-50%,-50%,0);
-            transform: translate3d(-50%,-50%,0);
-
-    -webkit-transition: opacity 400ms ease-in-out;
-            transition: opacity 400ms ease-in-out;
-}
-
-.panel.panel-card .panel-body {
-    padding-top: 40px;
-    padding-bottom: 20px;
-
-    -webkit-transition: padding 400ms ease-in-out;
-            transition: padding 400ms ease-in-out;
-}
-
-.panel.panel-card .panel-thumbnails {
-    padding: 0 15px 20px;
-}
+  .panel.panel-card .panel-thumbnails {
+      padding: 0 15px 20px;
+  }
 
 
-.panel.panel-card:hover .panel-heading {
-    height: 55px;
+  .panel.panel-card:hover .panel-heading {
+      height: 55px;
 
-    -webkit-transition: height 400ms ease-in-out;
-            transition: height 400ms ease-in-out;
-}
-.panel.panel-card:hover .panel-figure {
-    opacity: 0;
+      -webkit-transition: height 400ms ease-in-out;
+              transition: height 400ms ease-in-out;
+  }
+  .panel.panel-card:hover .panel-figure {
+      opacity: 0;
 
-    -webkit-transition: opacity 400ms ease-in-out;
-            transition: opacity 400ms ease-in-out;
-}
-.panel.panel-card:hover .panel-body {
-    padding-top: 20px;
+      -webkit-transition: opacity 400ms ease-in-out;
+              transition: opacity 400ms ease-in-out;
+  }
+  .panel.panel-card:hover .panel-body {
+      padding-top: 20px;
 
-    -webkit-transition: padding 400ms ease-in-out;
-            transition: padding 400ms ease-in-out;
-}
+      -webkit-transition: padding 400ms ease-in-out;
+              transition: padding 400ms ease-in-out;
+  }
 
-.nav-item{
-  margin-right: 50px;
-}
+//------固定脚代码----------
+  html {
+     position: relative;
+     min-height: 100%;
+   }
+
+   body {
+     margin-bottom: 150px;
+   }
+
+   .footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: 150px;
+     text-align: center;
+   }
+
+   .container-1{
+     margin-top: 50px;
+     width: 100%;
+   }

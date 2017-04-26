@@ -1,28 +1,56 @@
-<nav class="navbar navbar-default" role="navigation">
+      <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
      <!-- Brand and toggle get grouped for better mobile display -->
      <div class="navbar-header">
          <a class="navbar-brand" href="/">SoAR</a>
-    </div>
+      </div>
+
+             <div class="form-inline">
+           <div class="col-md-6 col-md-4">
+         <%= form_tag search_jobs_path , :method => :get do %>
+          <li style="padding-bottom: 0em; padding-top: 0.6em;">
+         <div class="input-group" id="search-id" >
+           <input type="text" class="form-control" name="q" value="<%= params[:q] %>" placeholder="search job">
+           <div class="input-group-btn">
+             <button class="btn btn-default" type="submit">
+               <i class="glyphicon glyphicon-search"></i>
+             </button>
+           </div>
+
+         </div>
+         <% end %>
+       </div>
+
+       <div class="city-change nav navbar-nav navbar-centered">
+       <ul class="nav navbar-nav navbar-center">
+         <li style="font-size: 0.8em; color: white; margin-top: 1.5em;">
+             <% if @cuery_string.blank?%>
+                 全国
+             <% else %>
+                 <%= @cuery_string %>
+             <% end %>
+         </li>
+         <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 0.9em; margin: auto;" >[切换城市]<span class="caret"></span></a>
+             <ul class="dropdown-menu" id="bootstrap-override-1">
+                 <ul class="list-inline" style="30px;">
+                     <li><%= link_to("全国", jobs_path, class: "bootstrap-override-2") %></li>
+                     <li><%= link_to("北京", city_jobs_path(c:"北京"), class: "bootstrap-override-2") %></li>
+                     <li><%= link_to("上海", city_jobs_path(c:"上海"), class: "bootstrap-override-2") %></li>
+                     <li><%= link_to("深圳", city_jobs_path(c:"深圳"), class: "bootstrap-override-2") %></li>
+                     <li><%= link_to("广州", city_jobs_path(c:"广州"), class: "bootstrap-override-2") %></li>
+                     <li><%= link_to("厦门", city_jobs_path(c:"厦门"), class: "bootstrap-override-2") %></li>
+                 </ul>
+             </ul>
+         </li>
+       </ul>
+       </div>
+
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
 
-      <ul class="nav navbar-nav navbar-left">
-        <div class="nav navbar-nav navbar-left">
-      <%= form_tag "#" , :method => :get  do %>
-      <div class="input-group" id="search-id" >
-        <input type="text" class="form-control" name="q" value="<%= params[:q] %>" placeholder="请输入职位信息">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
-          </button>
-        </div>
-
-      </div>
-      <% end %>
-
-    </div>
       <% if !current_user %>
         <li><%= link_to("注册", new_user_registration_path) %> </li>
         <li><%= link_to("登入", new_user_session_path) %></li>
@@ -38,32 +66,10 @@
           <% end %>
             <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %> </li>
           </ul>
+
         </li>
       <% end %>
-      <div class="city-change nav navbar-nav navbar-right">
-    <ul class="nav navbar-nav navbar-right">
-        <li style="font-size: 0.4em; color: white; margin-top: 1.5em;">
-            <% if @cuery_string.blank?%>
-                全国
-            <% else %>
-                <%= @cuery_string %>
-            <% end %>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 0.5em; margin: auto;" >[切换城市]<span class="caret"></span></a>
-            <ul class="dropdown-menu" id="bootstrap-override-1">
-                <ul class="list-inline" style="30px;">
-                    <li><%= link_to("全国", jobs_path, class: "bootstrap-override-2") %></li>
-                    <li><%= link_to("北京", city_jobs_path(c:"北京"), class: "bootstrap-override-2") %></li>
-                    <li><%= link_to("上海", city_jobs_path(c:"上海"), class: "bootstrap-override-2") %></li>
-                    <li><%= link_to("深圳", city_jobs_path(c:"深圳"), class: "bootstrap-override-2") %></li>
-                    <li><%= link_to("广州", city_jobs_path(c:"广州"), class: "bootstrap-override-2") %></li>
-                    <li><%= link_to("厦门", city_jobs_path(c:"厦门"), class: "bootstrap-override-2") %></li>
-                </ul>
-            </ul>
-        </li>
-    </ul>
-</div>
+
 
     </div>
       </ul>
